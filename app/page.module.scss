@@ -1,0 +1,85 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.loginBox {
+  width: 350px;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  button {
+    padding: 8px 16px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+.loginMessage {
+  margin-top: 20px;
+  text-align: center;
+
+  p {
+    margin: 8px 0;
+  }
+}
+
+.registerButton {
+  border: none;
+  background: none;
+  padding: 5;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.registerText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registerButton {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
