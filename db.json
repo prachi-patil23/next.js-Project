@@ -1,9 +1,53 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "test@gmail.com",
+      "password": "123456"
+    },
+    {
+      "firstName": "Prachi",
+      "lastName": "patil",
+      "email": "prachii.p73@gmail.com",
+      "password": "040225",
+      "id": "wSHlr3PnOAs"
+    },
+    {
+      "firstName": "Hetvi",
+      "lastName": "Patel",
+      "email": "Hetvi@gmail.com",
+      "password": "24233",
+      "id": "TvRIgHLNKPY"
+    },
+    {
+      "firstName": "Disha",
+      "lastName": "Patat",
+      "email": "dishap@gmail.com",
+      "password": "098765",
+      "id": "jCSft7YlwZs"
+    },
+    {
+      "firstName": "Gyanish",
+      "lastName": "Patil",
+      "email": "patil123@gmail.com",
+      "password": "22072004",
+      "id": "RI-Mxgq5z8Y"
+    },
+    {
+      "firstName": "Prachi",
+      "lastName": "patil",
+      "email": "swami@gmail.com",
+      "password": "1357",
+      "id": "ERtPU7mZPCM"
+    }
+  ],
   "movies": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Spider-Man: Brand New Day",
-      "poster": "/movies/spiderman.jpg",
+      "poster": "/movies/Spider-Man.jpg",
       "rating": 8.9,
       "votes": "259K+ Votes",
       "genres": [
@@ -13,9 +57,9 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Batwara 1947",
-      "poster": "/movies/batwara.jpg",
+      "poster": "/movies/Batwara.jpg",
       "rating": 8.5,
       "votes": "135K+ Likes",
       "genres": [
@@ -25,9 +69,9 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Awarapan 2",
-      "poster": "/movies/awarapan.jpg",
+      "poster": "/movies/Awarapan 2.jpg",
       "rating": 8.7,
       "votes": "312K+ Likes",
       "genres": [
@@ -37,9 +81,9 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Dhamal 4",
-      "poster": "/movies/dhamal4.jpg",
+      "poster": "/movies/Dhamal 4.jpg",
       "rating": 7.6,
       "votes": "66.8K+ Votes",
       "genres": [
@@ -48,10 +92,10 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Get Set Go",
-      "poster": "/movies/getsetgo.jpg",
-      "rating": 9.0,
+      "poster": "/movies/Get Set Go.jpg",
+      "rating": 9,
       "votes": "360+ Votes",
       "genres": [
         "Action",
@@ -59,6 +103,460 @@
         "Drama",
         "Thriller"
       ]
+    },
+    {
+      "id": "6",
+      "title": "The Odyssey",
+      "poster": "/movies/TheOdyssey.jpg",
+      "rating": 8.7,
+      "votes": "95K+ Votes",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "The Last House",
+      "poster": "/movies/The Last House.jpg",
+      "rating": 7.4,
+      "votes": "18K+ Votes",
+      "genres": [
+        "Action",
+        "Horror",
+        "Sci-Fi",
+        "Thriller"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Welcome to the Jungle",
+      "poster": "/movies/Welcome To The Jungle.jpg",
+      "rating": 4.6,
+      "votes": "21K+ Votes",
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Cocktail 2",
+      "poster": "/movies/Cocktail 2.jpg",
+      "rating": 7.6,
+      "votes": "26K+ Votes",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Toxic",
+      "poster": "/movies/Toxic.jpg",
+      "rating": 8.1,
+      "votes": "12K+ Votes",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
     }
-  ]
+  ],
+  "theatres": [
+    {
+      "id": "1",
+      "name": "PVR: Palladium Mall",
+      "location": "Palladium Mall, Ahmedabad",
+      "cancellation": "Cancellation available",
+      "shows": [
+        {
+          "date": "2026-08-14",
+          "times": [
+            "10:00 AM",
+            "1:15 PM",
+            "4:30 PM",
+            "7:45 PM",
+            "10:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "times": [
+            "9:30 AM",
+            "12:45 PM",
+            "3:45 PM",
+            "7:00 PM",
+            "10:15 PM"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "times": [
+            "10:15 AM",
+            "1:30 PM",
+            "4:45 PM",
+            "8:00 PM",
+            "10:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "times": [
+            "9:45 AM",
+            "12:30 PM",
+            "3:30 PM",
+            "6:45 PM",
+            "9:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "times": [
+            "10:00 AM",
+            "1:00 PM",
+            "4:15 PM",
+            "7:30 PM",
+            "10:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "times": [
+            "9:30 AM",
+            "12:45 PM",
+            "3:45 PM",
+            "7:15 PM",
+            "10:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "times": [
+            "10:15 AM",
+            "1:30 PM",
+            "4:30 PM",
+            "7:45 PM",
+            "10:15 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Cinepolis: Nexus Ahmedabad One",
+      "location": "Nexus Ahmedabad One, Ahmedabad",
+      "cancellation": "Cancellation available",
+      "shows": [
+        {
+          "date": "2026-08-14",
+          "times": [
+            "11:00 AM",
+            "2:00 PM",
+            "5:00 PM",
+            "8:15 PM",
+            "11:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "times": [
+            "10:30 AM",
+            "1:45 PM",
+            "4:45 PM",
+            "7:45 PM",
+            "10:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "times": [
+            "11:15 AM",
+            "2:15 PM",
+            "5:15 PM",
+            "8:30 PM",
+            "11:15 PM"
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "times": [
+            "10:45 AM",
+            "1:30 PM",
+            "4:30 PM",
+            "7:30 PM",
+            "10:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "times": [
+            "11:00 AM",
+            "2:00 PM",
+            "5:00 PM",
+            "8:00 PM",
+            "11:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "times": [
+            "10:30 AM",
+            "1:45 PM",
+            "4:45 PM",
+            "7:45 PM",
+            "10:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "times": [
+            "11:15 AM",
+            "2:15 PM",
+            "5:15 PM",
+            "8:15 PM",
+            "11:15 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "INOX: Himalaya Mall",
+      "location": "Himalaya Mall, Ahmedabad",
+      "cancellation": "Cancellation available",
+      "shows": [
+        {
+          "date": "2026-08-14",
+          "times": [
+            "9:45 AM",
+            "12:45 PM",
+            "3:45 PM",
+            "6:45 PM",
+            "9:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "times": [
+            "10:15 AM",
+            "1:15 PM",
+            "4:15 PM",
+            "7:15 PM",
+            "10:15 PM"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "times": [
+            "9:30 AM",
+            "12:30 PM",
+            "3:30 PM",
+            "6:30 PM",
+            "9:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "times": [
+            "10:00 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "7:00 PM",
+            "10:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "times": [
+            "9:45 AM",
+            "12:45 PM",
+            "3:45 PM",
+            "6:45 PM",
+            "9:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "times": [
+            "10:15 AM",
+            "1:15 PM",
+            "4:15 PM",
+            "7:15 PM",
+            "10:15 PM"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "times": [
+            "9:30 AM",
+            "12:30 PM",
+            "3:30 PM",
+            "6:30 PM",
+            "9:30 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Miraj Cinemas: Ahmedabad",
+      "location": "Ahmedabad",
+      "cancellation": "Cancellation available",
+      "shows": [
+        {
+          "date": "2026-08-14",
+          "times": [
+            "10:30 AM",
+            "1:30 PM",
+            "4:30 PM",
+            "7:30 PM",
+            "10:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "times": [
+            "11:00 AM",
+            "2:00 PM",
+            "5:00 PM",
+            "8:00 PM",
+            "11:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "times": [
+            "10:15 AM",
+            "1:15 PM",
+            "4:15 PM",
+            "7:15 PM",
+            "10:15 PM"
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "times": [
+            "10:45 AM",
+            "1:45 PM",
+            "4:45 PM",
+            "7:45 PM",
+            "10:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "times": [
+            "10:30 AM",
+            "1:30 PM",
+            "4:30 PM",
+            "7:30 PM",
+            "10:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "times": [
+            "11:00 AM",
+            "2:00 PM",
+            "5:00 PM",
+            "8:00 PM",
+            "11:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "times": [
+            "10:15 AM",
+            "1:15 PM",
+            "4:15 PM",
+            "7:15 PM",
+            "10:15 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Mukta A2 Cinemas",
+      "location": "Ahmedabad",
+      "cancellation": "Cancellation available",
+      "shows": [
+        {
+          "date": "2026-08-14",
+          "times": [
+            "10:00 AM",
+            "12:30 PM",
+            "3:30 PM",
+            "6:30 PM",
+            "9:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "times": [
+            "10:30 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "7:00 PM",
+            "10:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "times": [
+            "9:45 AM",
+            "12:45 PM",
+            "3:45 PM",
+            "6:45 PM",
+            "9:45 PM"
+          ]
+        },
+        {
+          "date": "2026-08-17",
+          "times": [
+            "10:15 AM",
+            "1:15 PM",
+            "4:15 PM",
+            "7:15 PM",
+            "10:15 PM"
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "times": [
+            "10:00 AM",
+            "12:30 PM",
+            "3:30 PM",
+            "6:30 PM",
+            "9:30 PM"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "times": [
+            "10:30 AM",
+            "1:00 PM",
+            "4:00 PM",
+            "7:00 PM",
+            "10:00 PM"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "times": [
+            "9:45 AM",
+            "12:45 PM",
+            "3:45 PM",
+            "6:45 PM",
+            "9:45 PM"
+          ]
+        }
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

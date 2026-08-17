@@ -1,0 +1,76 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f6f8;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #222;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    color: #e91e63;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+}
+
+.movieCard {
+  min-width: 0;
+}
+
+.poster {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.movieInfo {
+  padding-top: 10px;
+
+  h2 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #222;
+  }
+}
+
+.rating {
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.votes {
+  margin: 0 0 7px;
+  font-size: 14px;
+}
+
+.genres {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.message {
+  padding: 40px;
+  font-size: 20px;
+}

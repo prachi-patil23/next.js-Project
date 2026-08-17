@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Providers from "./components/provider";
+import Providers from "./provider";
 
 export const metadata: Metadata = {
   title: "Movie Ticket Booking",
