@@ -1,0 +1,280 @@
+.moviePage {
+  min-height: 100vh;
+  padding: 30px 45px 60px;
+  background: #f7f8fa;
+}
+.movieHeader {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  max-width: 1100px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.poster {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+.dateSection {
+  max-width: 1100px;
+  margin-top: 30px;
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+  h2 {
+    margin: 0 0 18px;
+    font-size: 22px;
+    color: #222;
+  }
+}
+
+.dateList {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dateButton,
+.selectedDate {
+  width: 78px;
+  min-height: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: inherit;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.dateButton {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  color: #333;
+
+  span {
+    font-size: 13px;
+  }
+
+  strong {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    border-color: #ef476f;
+    transform: translateY(-2px);
+  }
+}
+
+.selectedDate {
+  background: #ef476f;
+  border: 1px solid #ef476f;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(239, 71, 111, 0.25);
+
+  span {
+    font-size: 13px;
+  }
+
+  strong {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+// THEATRES
+
+.theatreSection {
+  max-width: 1100px;
+  margin-top: 30px;
+
+  h2 {
+    margin: 0 0 18px;
+    font-size: 24px;
+    color: #222;
+  }
+}
+
+.theatreCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+
+  &:first-of-type {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: none;
+  }
+}
+
+.theatreInfo {
+  min-width: 280px;
+  h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  span {
+    font-size: 12px;
+    color: #777;
+  }
+}
+  
+// SHOWTIMES
+
+.showTimes {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.timeButton {
+  min-width: 105px;
+  height: 42px;
+  padding: 0 14px;
+  background: #ffffff;
+  border: 1px solid #18a957;
+  border-left: 3px solid #18a957;
+  border-radius: 3px;
+  color: #444;
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    background: #18a957;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+}
+  //  LOADING / ERROR
+
+.message {
+  padding: 40px;
+
+  text-align: center;
+
+  font-size: 18px;
+  color: #555;
+}
+
+  //  RESPONSIVE
+
+@media (max-width: 900px) {
+  .moviePage {
+    padding: 20px;
+  }
+
+  .movieHeader {
+    gap: 20px;
+  }
+
+  .poster {
+    width: 180px;
+    height: 260px;
+  }
+
+  .movieInfo {
+    h1 {
+      font-size: 26px;
+    }
+  }
+
+  .theatreCard {
+    flex-direction: column;
+  }
+
+  .showTimes {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .movieHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .poster {
+    width: 160px;
+    height: 235px;
+  }
+
+  .dateList {
+    gap: 8px;
+  }
+
+  .dateButton,
+  .selectedDate {
+    width: 65px;
+    min-height: 75px;
+  }
+
+  .theatreCard {
+    padding: 18px;
+  }
+
+  .theatreInfo {
+    min-width: auto;
+  }
+
+  .timeButton {
+    min-width: 95px;
+  }
+}
