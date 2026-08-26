@@ -1,12 +1,5 @@
-import {
-  createSlice,
-  PayloadAction,
-} from "@reduxjs/toolkit";
-
-import {
-  loginUser,
-  signupUser,
-} from "./userThunk";
+import { createSlice, PayloadAction,} from "@reduxjs/toolkit";
+import { loginUser, signupUser,} from "./userThunk";
 
 interface User {
   id: number;
@@ -16,7 +9,7 @@ interface User {
 }
 
 interface UserState {
-  firstName: string;
+  firstName: string;    
   lastName: string;
   email: string;
   password: string;
@@ -41,42 +34,31 @@ const initialState: UserState = {
 
 const userSlice = createSlice({
   name: "user",
-
   initialState,
 
   reducers: {
     setFirstName: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+      state, action: PayloadAction<string> ) => {
       state.firstName = action.payload;
     },
 
     setLastName: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+      state, action: PayloadAction<string> ) => {
       state.lastName = action.payload;
     },
 
     setEmail: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+      state, action: PayloadAction<string> ) => {
       state.email = action.payload;
     },
 
     setPassword: (
-      state,
-      action: PayloadAction<string>
-    ) => {
+      state, action: PayloadAction<string>) => {
       state.password = action.payload;
     },
 
     setAuthMode: (
-      state,
-      action: PayloadAction<"login" | "signup">
-    ) => {
+      state, action: PayloadAction<"login" | "signup"> ) => {
       state.authMode = action.payload;
     },
 
@@ -101,85 +83,49 @@ const userSlice = createSlice({
 
   extraReducers: (builder) => {
     builder
-
       // LOGIN SUCCESS
+      //Successful login ke baad Redux mein user + token + login status save karta hai.
       .addCase(
         loginUser.fulfilled,
         (state, action) => {
           state.isLoggedIn = true;
           state.loginMessage = "";
-
           state.token = action.payload.token;
-
           state.user = action.payload.user;
-
-          state.firstName =
-            action.payload.user.firstName;
-
-          state.lastName =
-            action.payload.user.lastName;
-
-          state.email =
-            action.payload.user.email;
-
+          state.firstName = action.payload.user.firstName;
+          state.lastName = action.payload.user.lastName;
+          state.email = action.payload.user.email;
           state.password = "";
         }
       )
-
       // LOGIN FAILED
-      .addCase(
-        loginUser.rejected,
+      .addCase( loginUser.rejected,
         (state, action) => {
           state.isLoggedIn = false;
           state.token = "";
-
-          state.loginMessage =
-            (action.payload as string) ||
-            "Invalid email or password";
+          state.loginMessage = (action.payload as string) || "Invalid email or password";
         }
       )
-
       // SIGNUP SUCCESS
-      .addCase(
-        signupUser.fulfilled,
+      .addCase( signupUser.fulfilled,
         (state, action) => {
           state.user = action.payload;
-
-          state.firstName =
-            action.payload.firstName;
-
-          state.lastName =
-            action.payload.lastName;
-
-          state.email =
-            action.payload.email;
-
+          state.firstName = action.payload.firstName;
+          state.lastName = action.payload.lastName;
+          state.email = action.payload.email;
           state.password = "";
-
           state.loginMessage = "";
         }
       )
-
       // SIGNUP FAILED
-      .addCase(
-        signupUser.rejected,
-        (state, action) => {
-          state.loginMessage =
-            (action.payload as string) ||
-            "Registration failed";
+      .addCase( signupUser.rejected, (state, action) => {
+          state.loginMessage = (action.payload as string) ||"Registration failed";
         }
       );
   },
 });
 
-export const {
-  setFirstName,
-  setLastName,
-  setEmail,
-  setPassword,
-  setAuthMode,
-  clearLoginMessage,
-  logout,
+export const {setFirstName,setLastName,setEmail,setPassword,setAuthMode,clearLoginMessage,logout,
 } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -3,7 +3,6 @@
   padding: 40px;
   background: #f5f6f8;
 }
-
 .heading {
   display: flex;
   align-items: center;
@@ -24,53 +23,139 @@
     cursor: pointer;
   }
 }
-
 .movieList {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 28px;
 }
-
 .movieCard {
   min-width: 0;
 }
-
 .poster {
-  width: 100%;
-  height: 380px;
+  width: 250px;
+  height: 320px;
   object-fit: cover;
+  border-radius: 8px;
   display: block;
-  border-radius: 8px 8px 0 0;
 }
-
 .movieInfo {
   padding-top: 10px;
-
   h2 {
     margin: 0 0 8px;
     font-size: 18px;
     color: #222;
   }
 }
-
 .rating {
   margin: 0 0 5px;
   font-size: 14px;
   font-weight: 600;
 }
-
 .votes {
   margin: 0 0 7px;
   font-size: 14px;
 }
-
 .genres {
   margin: 0;
   font-size: 14px;
   color: #666;
 }
-
 .message {
   padding: 40px;
   font-size: 20px;
+}
+.skeletonPoster,
+.skeletonTitle,
+.skeletonText {
+  background: #e5e5e5;
+  animation: skeletonLoading 1.5s infinite;
+}
+.skeletonPoster {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+.skeletonTitle {
+  width: 80%;
+  height: 22px;
+  margin-bottom: 12px;
+}
+.skeletonText {
+  width: 60%;
+  height: 14px;
+  margin-bottom: 8px;
+}
+@keyframes skeletonLoading {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5;}
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin: 30px auto;
+  padding: 10px 14px;
+
+  width: fit-content;
+
+  background: #ffffff;
+  border-radius: 6px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  button {
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    background: transparent;
+
+    border-radius: 4px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #999;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+  }
+
+  button:hover:not(:disabled) {
+    background: #f1f1f1;
+    color: #333;
+  }
+
+  .activePage {
+    background: #2196f3;
+    color: #ffffff;
+  }
+
+  .activePage:hover {
+    background: #2196f3;
+    color: #ffffff;
+  }
+
+  .arrowButton {
+    font-size: 22px;
+    color: #aaa;
+  }
+
+  button:disabled {
+    background: #eeeeee;
+    color: #bdbdbd;
+    cursor: not-allowed;
+  }
+
+  .dots {
+    width: 25px;
+    text-align: center;
+    color: #aaa;
+    font-weight: 600;
+  }
+
 }

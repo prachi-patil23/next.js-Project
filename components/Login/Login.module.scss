@@ -7,32 +7,43 @@
 }
 
 .loginBox {
-  width: 350px;
-  padding: 30px;
+  width: 400px;
+  padding: 35px 40px;
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
 
   h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
+    font-size: 28px;
   }
 
   form {
     display: flex;
     flex-direction: column;
+  }
 
-    label {
-      margin-bottom: 6px;
-      font-weight: bold;
-    }
+  label {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 15px;
+  }
 
-    input {
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-      font-size: 16px;
+  input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+
+    &:focus {
+      border-color: #555;
     }
   }
 }
@@ -41,45 +52,40 @@
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  margin-top: 5px;
 
   button {
-    padding: 8px 16px;
+    padding: 9px 18px;
     border: 1px solid #888;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: white;
     cursor: pointer;
+    font-size: 14px;
 
     &:hover {
       background-color: #eee;
     }
   }
 }
+
 .loginMessage {
-  margin-top: 20px;
+  margin: 0 0 15px;
   text-align: center;
-
-  p {
-    margin: 8px 0;
-  }
+  color: #d00;
 }
 
-.registerButton {
-  border: none;
-  background: none;
-  padding: 5;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-}
 .registerText {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 22px;
+  font-size: 14px;
 }
 
 .registerButton {
   border: none;
   background: none;
   padding: 0;
-  cursor: pointer;
+  font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
 }

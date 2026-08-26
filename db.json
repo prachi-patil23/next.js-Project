@@ -41,6 +41,20 @@
       "email": "swami@gmail.com",
       "password": "1357",
       "id": "ERtPU7mZPCM"
+    },
+    {
+      "firstName": "Kausar",
+      "lastName": "Bhai",
+      "email": "kosar234@gmail.com",
+      "password": "13579",
+      "id": "FEVKjV9D0Io"
+    },
+    {
+      "firstName": "disha1",
+      "lastName": "Patat",
+      "email": "disha34@gmail.com",
+      "password": "0864",
+      "id": "Z81MDUS9fRo"
     }
   ],
   "movies": [
@@ -50,11 +64,7 @@
       "poster": "/movies/Spider-Man.jpg",
       "rating": 8.9,
       "votes": "259K+ Votes",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ]
+      "genres": ["Action", "Adventure","Sci-Fi"]
     },
     {
       "id": "2",
@@ -62,11 +72,7 @@
       "poster": "/movies/Batwara.jpg",
       "rating": 8.5,
       "votes": "135K+ Likes",
-      "genres": [
-        "Action",
-        "Drama",
-        "Period"
-      ]
+      "genres": ["Action", "Drama", "Period"]
     },
     {
       "id": "3",
@@ -74,11 +80,7 @@
       "poster": "/movies/Awarapan 2.jpg",
       "rating": 8.7,
       "votes": "312K+ Likes",
-      "genres": [
-        "Action",
-        "Crime",
-        "Romantic"
-      ]
+      "genres": [ "Action", "Crime", "Romantic" ]
     },
     {
       "id": "4",
@@ -86,10 +88,7 @@
       "poster": "/movies/Dhamal 4.jpg",
       "rating": 7.6,
       "votes": "66.8K+ Votes",
-      "genres": [
-        "Adventure",
-        "Comedy"
-      ]
+      "genres": [ "Adventure", "Comedy" ]
     },
     {
       "id": "5",
@@ -97,12 +96,7 @@
       "poster": "/movies/Get Set Go.jpg",
       "rating": 9,
       "votes": "360+ Votes",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Drama",
-        "Thriller"
-      ]
+      "genres": [ "Action", "Comedy", "Drama", "Thriller" ]
     },
     {
       "id": "6",
@@ -110,11 +104,7 @@
       "poster": "/movies/TheOdyssey.jpg",
       "rating": 8.7,
       "votes": "95K+ Votes",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama"
-      ]
+      "genres": [ "Action", "Adventure", "Drama" ]
     },
     {
       "id": "7",
@@ -122,12 +112,7 @@
       "poster": "/movies/The Last House.jpg",
       "rating": 7.4,
       "votes": "18K+ Votes",
-      "genres": [
-        "Action",
-        "Horror",
-        "Sci-Fi",
-        "Thriller"
-      ]
+      "genres": [ "Action", "Horror", "Sci-Fi", "Thriller"]
     },
     {
       "id": "8",
@@ -135,11 +120,7 @@
       "poster": "/movies/Welcome To The Jungle.jpg",
       "rating": 4.6,
       "votes": "21K+ Votes",
-      "genres": [
-        "Comedy",
-        "Action",
-        "Adventure"
-      ]
+      "genres": [ "Comedy", "Action", "Adventure" ]
     },
     {
       "id": "9",
@@ -147,11 +128,7 @@
       "poster": "/movies/Cocktail 2.jpg",
       "rating": 7.6,
       "votes": "26K+ Votes",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ]
+      "genres": [ "Comedy", "Drama", "Romance" ]
     },
     {
       "id": "10",
@@ -159,11 +136,15 @@
       "poster": "/movies/Toxic.jpg",
       "rating": 8.1,
       "votes": "12K+ Votes",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama"
-      ]
+      "genres": [ "Action", "Adventure", "Drama"]
+    },
+    {
+       "id": 11,
+       "title": "War 2",
+       "poster": "/movies/War 2.jpg",
+       "rating": 8.6,
+       "votes": "245K+ Votes",
+       "genres": ["Action", "Thriller"]
     }
   ],
   "theatres": [
@@ -557,6 +538,5 @@
         }
       ]
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

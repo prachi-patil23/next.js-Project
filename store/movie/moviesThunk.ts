@@ -10,9 +10,7 @@ export const fetchMovies = createAsyncThunk(
       return data;
     } catch (error) {
       return rejectWithValue(
-        error instanceof Error
-          ? error.message
-          : "Failed to fetch movies"
+        error instanceof Error ? error.message : "Failed to fetch movies"
       );
     }
   }
