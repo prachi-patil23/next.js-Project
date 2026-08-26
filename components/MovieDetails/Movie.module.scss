@@ -278,3 +278,77 @@
     min-width: 95px;
   }
 }
+.skeletonPoster,
+.skeletonTitle,
+.skeletonText,
+.skeletonSectionTitle,
+.skeletonDate,
+.skeletonTheatre,
+.skeletonTime {
+  background: #e5e5e5;
+  animation: skeletonLoading 1.5s infinite;
+}
+
+.skeletonPoster {
+  width: 220px;
+  height: 320px;
+  border-radius: 8px;
+}
+
+.skeletonTitle {
+  width: 220px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.skeletonText {
+  width: 150px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.skeletonSectionTitle {
+  width: 180px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.skeletonDate {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+
+.skeletonTheatre {
+  min-height: 100px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skeletonTimes {
+  display: flex;
+  gap: 10px;
+}
+
+.skeletonTime {
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
